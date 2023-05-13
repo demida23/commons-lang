@@ -587,6 +587,10 @@
   </distributionManagement>
 
   <properties>
+   
+    <sonar.organization>demida23</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+
     <argLine>-Xmx512m</argLine>
     <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
