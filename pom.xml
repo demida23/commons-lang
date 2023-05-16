@@ -673,15 +673,21 @@
             <version>1.7.0</version>
             <configuration>
                 <targetClasses>
-                    <param>org.apache.commons.lang3.AnnotationUtils</param>
-                    <param>org.apache.commons.lang3.ArrayUtils</param>
-                    
+                    <param>org.apache.commons.lang3.ArchUtils</param> 
                 </targetClasses>
                 <targetTests>
-                    <param>org.apache.commons.lang3.AbstractLangTest</param>
-                   
+                    <param>org.apache.commons.lang3.AbstractLangTest</param> 
                 </targetTests>
             </configuration>
+            <executions>
+                <execution>
+                    <id>pitest</id>
+                    <phase>test</phase>
+                    <goals>
+                        <goal>mutationCoverage</goal>
+                    </goals>
+                </execution>
+            </executions>
         </plugin>
         <plugin>
             <groupId>org.apache.rat</groupId>
