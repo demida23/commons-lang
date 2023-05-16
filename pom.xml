@@ -670,19 +670,18 @@
         <plugin>
             <groupId>org.pitest</groupId>
             <artifactId>pitest-maven</artifactId>
-            <version>1.7.0</version>
+            <version>1.7.4</version>
             <configuration>
                 <targetClasses>
-                    <param>org.apache.commons.lang3.ArchUtils</param> 
+                    <param>org.apache.commons.lang3.**</param>
                 </targetClasses>
                 <targetTests>
-                    <param>org.apache.commons.lang3.AbstractLangTest</param> 
+                    <param>org.apache.commons.lang3.**</param>
                 </targetTests>
             </configuration>
             <executions>
                 <execution>
-                    <id>pitest</id>
-                    <phase>test</phase>
+                    <id>pitest-mutation-coverage</id>
                     <goals>
                         <goal>mutationCoverage</goal>
                     </goals>
