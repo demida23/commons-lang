@@ -673,10 +673,12 @@
           <version>1.7.0</version>
           <configuration>
             <targetClasses>
-              <param>com.example.yourpackage.*</param>
+              <param>AnnotationUtils</param>
+              <param>ArraySorter</param>
             </targetClasses>
             <targetTests>
-              <param>com.example.yourpackage.*Test</param>
+              <param>AnnotationUtilsTest</param>
+              <param>ArraySorterTest</param>
             </targetTests>
           </configuration>
           <executions>
