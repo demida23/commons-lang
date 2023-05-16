@@ -677,8 +677,8 @@
               <param>ArraySorter</param>
             </targetClasses>
             <targetTests>
-              <param>AnnotationUtilsTest</param>
-              <param>ArraySorterTest</param>
+              <param>CompositeFormatTest</param>
+              <param>EntityArraysTest</param>
             </targetTests>
           </configuration>
           <executions>
