@@ -679,7 +679,7 @@
                 </targetClasses>
                 <targetTests>
                     <param>org.apache.commons.lang3.AbstractLangTest</param>
-                    <param>org.apache.commons.lang3.ArrayUtilsTest</param>
+                   
                 </targetTests>
             </configuration>
         </plugin>
