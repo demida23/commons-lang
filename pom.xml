@@ -668,27 +668,20 @@
           </executions>
         </plugin>
         <plugin>
-          <groupId>org.pitest</groupId>
-          <artifactId>pitest-maven</artifactId>
-          <version>1.7.0</version>
-          <configuration>
-            <targetClasses>
-              <param>AnnotationUtils</param>
-              <param>ArraySorter</param>
-            </targetClasses>
-            <targetTests>
-              <param>CompositeFormatTest</param>
-              <param>EntityArraysTest</param>
-            </targetTests>
-          </configuration>
-          <executions>
-            <execution>
-              <id>pitest</id>
-              <goals>
-                <goal>mutationCoverage</goal>
-              </goals>
-            </execution>
-          </executions>
+            <groupId>org.pitest</groupId>
+            <artifactId>pitest-maven</artifactId>
+            <version>1.7.0</version>
+            <configuration>
+                <targetClasses>
+                    <param>org.apache.commons.lang3.AnnotationUtils</param>
+                    <param>org.apache.commons.lang3.ArrayUtils</param>
+                    
+                </targetClasses>
+                <targetTests>
+                    <param>org.apache.commons.lang3.AbstractLangTest</param>
+                    <param>org.apache.commons.lang3.ArrayUtilsTest</param>
+                </targetTests>
+            </configuration>
         </plugin>
         <plugin>
             <groupId>org.apache.rat</groupId>
