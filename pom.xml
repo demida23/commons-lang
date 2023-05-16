@@ -673,15 +673,20 @@
           <version>1.7.0</version>
           <configuration>
             <targetClasses>
-              <param>com.example.project.*</param>
+              <param>com.example.yourpackage.*</param>
             </targetClasses>
             <targetTests>
-              <param>com.example.project.*Test</param>
+              <param>com.example.yourpackage.*Test</param>
             </targetTests>
-            <excludedClasses>
-              <param>com.example.project.ExcludedClass</param>
-            </excludedClasses>
           </configuration>
+          <executions>
+            <execution>
+              <id>pitest</id>
+              <goals>
+                <goal>mutationCoverage</goal>
+              </goals>
+            </execution>
+          </executions>
         </plugin>
         <plugin>
             <groupId>org.apache.rat</groupId>
